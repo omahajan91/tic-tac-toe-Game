@@ -1,0 +1,92 @@
+/* Basic body setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center game board */
+.board-container {
+  width: 450px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Each row */
+.board-row {
+  display: flex;
+}
+
+/* Square styles */
+.square {
+  border: 2px solid #4b5563;
+  height: 130px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #1f2937;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #d1d5db;
+}
+
+/* Player move text */
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #111827;
+}
+
+/* Winner or draw container */
+.winner-container, .draw-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Winner text */
+.winner-container h1,
+.draw-container h1 {
+  font-size: 32px;
+  color: #10b981;
+}
+
+.winner-container h3,
+.draw-container h3 {
+  color: #6b7280;
+}
+
+/* Reset button */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
